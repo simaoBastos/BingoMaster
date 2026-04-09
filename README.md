@@ -26,6 +26,28 @@ A aplicação contém:
 
 ---
 
+## 📦 Download
+
+Para baixar o programa:
+
+1. Vá até a aba **Releases** do repositório
+2. Baixe o arquivo `.zip` mais recente
+3. Extraia os arquivos em qualquer pasta
+
+---
+
+## ▶️ Como executar
+
+1. Abra a pasta extraída
+2. Execute o arquivo: BingoMaster.exe
+
+> ⚠️ Certifique-se de que os arquivos abaixo estão na mesma pasta:
+>
+> - `tick.wav`
+> - `ding.wav`
+
+---
+
 ## ⚙️ Como funciona
 
 - Os números de 1 a 75 são armazenados em uma lista (`globoDeNumeros`)
@@ -57,28 +79,24 @@ O projeto utiliza dois arquivos de áudio:
 
 ---
 
-## 🚀 Como executar
+## 🛠️ Tecnologias
 
-1. Abra o projeto no **Visual Studio**
-2. Certifique-se de que os arquivos estão no diretório do executável:
-   - `tick.wav`
-   - `ding.wav`
-3. Execute o projeto (`F5`)
+- C#
+- .NET (Windows Forms)
+- System.Media
 
 ---
 
-## 🧠 Estrutura básica
+## 💡 Melhorias futuras
 
-```csharp
-// Inicializa os números
-for (int i = 1; i <= 75; i++)
-{
-    globoDeNumeros.Add(i);
-}
+- ✨ Animação com fade-in no número final  
+- 🎨 Interface mais estilizada  
+- 🔊 Narração dos números sorteados  
+- 📤 Exportar histórico  
+- 🌐 Versão web  
 
-// Sorteio
-int indice = random.Next(globoDeNumeros.Count);
-int numero = globoDeNumeros[indice];
+---
 
-// Remove para não repetir
-globoDeNumeros.RemoveAt(indice);
+## 📄 Licença
+
+Livre para uso, modificação e zoeira 👍
